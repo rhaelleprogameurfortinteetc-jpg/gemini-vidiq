@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMDAxNzU4ODY5MDQ1MTExNzM0OSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzg5YTRiNDVlMGZmYTIxZDBfaW5kZXguaHRtbC0yOCJ9LCJleHAiOjE3OTQ5MzQwMjUsImlhdCI6MTc5NDkzMDQyNSwiYWxnIjoiUlMyNTYifQ.EV64QAbanCF-i0fB5LCAxirZO9O4z0XIncaBYJPb15BVKGrnYKXih1529gUx-Bn1_fcC3rKDFkeVZmOC_5hTRfYU4BfbuVPZDFcotWFgIVsi1fgwXlbIFwj3f7w_EZH6TkWldqc0KP57YW9E_owwJc-X3gS-fiS9BC885BCTDTPeX9fmfsFSko8U1iVCOtPKfZDrf0aa7FXwGUzatRIg0VAMjnGbUx9Hak1xScC4auAxQ5UgNcfVYCEcGWC7DtKzFxj5OMfN9KpF0UBJ9k_-3QSYOBrSAVfZbcnS2mzHXjOA_iqA-V-Tv036R7CK2NYU1oEBgocSLDBIXYkRl3rZxw","c_89a4b45e0ffa21d0_index.html-28")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhaelleprogameur Studio AI • Édition Néon Cyan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #00f3ff;
+            --neon-blue: #0099ff;
+            --deep-bg: #020b18;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-bg);
+            background-image: 
+                radial-gradient(circle at 50% 18%, rgba(0, 243, 255, 0.14) 0%, rgba(0, 119, 182, 0.06) 38%, rgba(2, 11, 24, 1) 80%);
+            color: #e6f7ff;
+            overflow-x: hidden;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Cartes effet verre dépoli bleu nuit avec bordure cyan néon */
+        .glass-card {
+            background: rgba(5, 22, 43, 0.72);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 243, 255, 0.22);
+            box-shadow: 0 8px 32px rgba(0, 8, 20, 0.75), inset 0 0 20px rgba(0, 243, 255, 0.03);
+        }
+        .neon-border-cyan {
+            border: 1px solid rgba(0, 243, 255, 0.55);
+            box-shadow: 0 0 22px rgba(0, 243, 255, 0.18), inset 0 0 12px rgba(0, 243, 255, 0.08);
+        }
+        .neon-text-cyan {
+            color: #7ef9ff;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.75), 0 0 24px rgba(0, 180, 255, 0.45);
+        }
+        .neon-btn {
+            background: linear-gradient(135deg, #00d2ff 0%, #0080ff 100%);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.35);
+            transition: all 0.2s ease;
+        }
+        .neon-btn:hover {
+            box-shadow: 0 0 28px rgba(0, 243, 255, 0.65);
+            filter: brightness(1.08);
+        }
+        /* Grand R néon en filigrane d'arrière-plan inspiré du fond d'écran */
+        .bg-watermark-r {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -48%);
+            width: min(88vw, 680px);
+            height: auto;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.22;
+            filter: blur(1.5px) drop-shadow(0 0 35px rgba(0, 243, 255, 0.5));
+        }
+        /* Scrollbar personnalisée cyan */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(2, 11, 24, 0.8);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 243, 255, 0.35);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 243, 255, 0.65);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-3{right:0.75rem}.right-5{right:1.25rem}.top-0{top:0px}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mr-1\.5{margin-right:0.375rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-2\.5{height:0.625rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.max-h-56{max-height:14rem}.max-h-\[520px\]{max-height:520px}.min-h-\[600px\]{min-height:600px}.min-h-screen{min-height:100vh}.w-11{width:2.75rem}.w-2\.5{width:0.625rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.w-14{width:3.5rem}.min-w-0{min-width:0px}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-\[90\%\]{max-width:90%}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-tl-none{border-top-left-radius:0px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-cyan-400\/30{border-color:rgb(34 211 238 / 0.3)}.border-cyan-400\/40{border-color:rgb(34 211 238 / 0.4)}.border-cyan-400\/50{border-color:rgb(34 211 238 / 0.5)}.border-cyan-400\/60{border-color:rgb(34 211 238 / 0.6)}.border-cyan-500\/20{border-color:rgb(6 182 212 / 0.2)}.border-cyan-500\/25{border-color:rgb(6 182 212 / 0.25)}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-cyan-500\/35{border-color:rgb(6 182 212 / 0.35)}.border-cyan-500\/40{border-color:rgb(6 182 212 / 0.4)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.bg-\[\#01060e\]\/85{background-color:rgb(1 6 14 / 0.85)}.bg-\[\#020b18\]{--tw-bg-opacity:1;background-color:rgb(2 11 24 / var(--tw-bg-opacity, 1))}.bg-\[\#020b18\]\/90{background-color:rgb(2 11 24 / 0.9)}.bg-\[\#020d1c\]\/90{background-color:rgb(2 13 28 / 0.9)}.bg-\[\#020d1c\]\/95{background-color:rgb(2 13 28 / 0.95)}.bg-\[\#031326\]{--tw-bg-opacity:1;background-color:rgb(3 19 38 / var(--tw-bg-opacity, 1))}.bg-\[\#031326\]\/90{background-color:rgb(3 19 38 / 0.9)}.bg-\[\#041830\]{--tw-bg-opacity:1;background-color:rgb(4 24 48 / var(--tw-bg-opacity, 1))}.bg-\[\#041830\]\/90{background-color:rgb(4 24 48 / 0.9)}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.bg-cyan-500\/15{background-color:rgb(6 182 212 / 0.15)}.bg-cyan-500\/20{background-color:rgb(6 182 212 / 0.2)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-\[\#020b18\]\/85{background-color:rgb(2 11 24 / 0.85)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-cyan-400{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 211 238 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-2{padding:0.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-3{padding-bottom:0.75rem}.pl-3\.5{padding-left:0.875rem}.pr-1{padding-right:0.25rem}.pr-10{padding-right:2.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-cyan-100{--tw-text-opacity:1;color:rgb(207 250 254 / var(--tw-text-opacity, 1))}.text-cyan-100\/80{color:rgb(207 250 254 / 0.8)}.text-cyan-200{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.text-cyan-200\/70{color:rgb(165 243 252 / 0.7)}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-300\/70{color:rgb(103 232 249 / 0.7)}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-cyan-400\/70{color:rgb(34 211 238 / 0.7)}.text-cyan-50{--tw-text-opacity:1;color:rgb(236 254 255 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-cyan-300\/80{color:rgb(103 232 249 / 0.8)}.text-cyan-200\/60{color:rgb(165 243 252 / 0.6)}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.placeholder-slate-400::placeholder{--tw-placeholder-opacity:1;color:rgb(148 163 184 / var(--tw-placeholder-opacity, 1))}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.accent-cyan-400{accent-color:#22d3ee}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_12px_rgba\(0\2c 243\2c 255\2c 0\.2\)\]{--tw-shadow:0 0 12px rgba(0,243,255,0.2);--tw-shadow-colored:0 0 12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_12px_rgba\(0\2c 243\2c 255\2c 0\.25\)\]{--tw-shadow:0 0 12px rgba(0,243,255,0.25);--tw-shadow-colored:0 0 12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_15px_rgba\(0\2c 243\2c 255\2c 0\.15\)\]{--tw-shadow:0 0 15px rgba(0,243,255,0.15);--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_20px_rgba\(0\2c 243\2c 255\2c 0\.35\)\]{--tw-shadow:0 0 20px rgba(0,243,255,0.35);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_8px_\#00f3ff\]{--tw-shadow:0 0 8px #00f3ff;--tw-shadow-colored:0 0 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-cyan-400 *::selection{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950 *::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.selection\:bg-cyan-400::selection{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.hover\:border-cyan-400\/50:hover{border-color:rgb(34 211 238 / 0.5)}.hover\:bg-\[\#072344\]:hover{--tw-bg-opacity:1;background-color:rgb(7 35 68 / var(--tw-bg-opacity, 1))}.hover\:bg-cyan-500\/20:hover{background-color:rgb(6 182 212 / 0.2)}.hover\:bg-cyan-500\/25:hover{background-color:rgb(6 182 212 / 0.25)}.hover\:bg-rose-950\/60:hover{background-color:rgb(76 5 25 / 0.6)}.hover\:bg-\[\#041830\]:hover{--tw-bg-opacity:1;background-color:rgb(4 24 48 / var(--tw-bg-opacity, 1))}.hover\:bg-cyan-400:hover{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.hover\:text-cyan-200:hover{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.hover\:text-cyan-300:hover{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.hover\:text-rose-300:hover{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-slate-950:hover{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:border-cyan-400:focus{--tw-border-opacity:1;border-color:rgb(34 211 238 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:inline-block{display:inline-block}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col relative selection:bg-cyan-400 selection:text-slate-950">
+
+    <!-- FILIGRANE ARRIÈRE-PLAN : GRAND "R" NÉON TUBULAIRE LUMINEUX -->
+    <svg class="bg-watermark-r" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <filter id="watermark-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="10" result="blur1"></feGaussianBlur>
+                <feGaussianBlur stdDeviation="22" result="blur2"></feGaussianBlur>
+                <feMerge>
+                    <feMergeNode in="blur2"></feMergeNode>
+                    <feMergeNode in="blur1"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+            <linearGradient id="neon-tube-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#80ffff"></stop>
+                <stop offset="50%" stop-color="#00e5ff"></stop>
+                <stop offset="100%" stop-color="#0088cc"></stop>
+            </linearGradient>
+        </defs>
+        <!-- Contour extérieur tubulaire du R géométrique -->
+        <path d="M55 385 V55 C55 42 65 32 78 32 H195 C242 32 272 62 272 112 V155 C272 198 246 226 205 233 L272 365 C278 377 270 390 256 390 H214 C205 390 197 385 193 377 L135 255 H108 V385 C108 394 101 400 92 400 H71 C62 400 55 394 55 385 Z M108 86 V198 H188 C208 198 219 185 219 162 V122 C219 99 208 86 188 86 H108 Z" stroke="url(#neon-tube-grad)" stroke-width="10" stroke-linejoin="round" filter="url(#watermark-glow)"></path>
+        <!-- Filet interne lumineux -->
+        <path d="M68 382 V60 C68 51 74 45 83 45 H192 C233 45 258 70 258 114 V153 C258 190 236 214 198 220 L260 368 C263 374 258 378 252 378 H217 C211 378 206 375 203 369 L142 242 H95 V382 C95 386 92 388 88 388 H74 C70 388 68 386 68 382 Z M95 73 V211 H189 C217 211 232 194 232 163 V121 C232 90 217 73 189 73 H95 Z" stroke="#b8ffff" stroke-width="3" opacity="0.8"></path>
+    </svg>
+
+    <!-- EN-TÊTE PRINCIPAL -->
+    <header class="sticky top-0 z-40 glass-card border-b border-cyan-500/25 px-4 sm:px-6 py-3">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+            
+            <!-- Logo SVG "R" Néon Cyan + Titre -->
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-[#031326] border border-cyan-400/60 flex items-center justify-center shadow-[0_0_20px_rgba(0,243,255,0.35)] shrink-0">
+                    <!-- Logo R tubulaire néon inspiré de l'image -->
+                    <svg class="w-7 h-8" viewBox="0 0 120 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="logo-r-glow" x="-30%" y="-30%" width="160%" height="160%">
+                                <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+                                <feMerge>
+                                    <feMergeNode in="blur"></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path d="M22 136 V20 C22 15 26 11 31 11 H73 C91 11 102 22 102 41 V57 C102 73 92 84 77 87 L102 135 C104 139 101 143 96 143 H81 C77 143 74 141 72 138 L51 94 H41 V136 C41 140 38 143 34 143 H28 C24 143 22 140 22 136 Z M41 31 V73 H70 C78 73 82 68 82 59 V45 C82 36 78 31 70 31 H41 Z" stroke="#00f3ff" stroke-width="4.5" stroke-linejoin="round" filter="url(#logo-r-glow)"></path>
+                        <path d="M27 135 V22 C27 18 29 16 33 16 H72 C88 16 97 25 97 42 V56 C97 70 89 79 75 82 L97 136 H82 L55 89 H36 V135 H27 Z M36 26 V78 H71 C81 78 87 71 87 59 V45 C87 33 81 26 71 26 H36 Z" stroke="#baffff" stroke-width="1.5"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-base sm:text-lg font-black tracking-tight text-white">
+                            Rhaelleprogameur <span class="neon-text-cyan">Studio AI</span>
+                        </h1>
+                        <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-400/40">
+                            Néon Cyan v2
+                        </span>
+                    </div>
+                    <p class="text-[11px] text-cyan-200/70 font-mono">
+                        @rhaelleprogameur • ID: UCnYTN59UL5WFhlvzeY4DqFQ
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Onglets -->
+            <nav class="flex items-center bg-[#020d1c]/90 p-1 rounded-xl border border-cyan-500/25">
+                <button onclick="switchTab('studio')" id="tab-btn-studio" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-cyan-200 cursor-pointer">
+                    <i class="fa-solid fa-bolt mr-1.5"></i>Studio &amp; Coach IA
+                </button>
+                <button onclick="switchTab('export')" id="tab-btn-export" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400/50 shadow-[0_0_12px_rgba(0,243,255,0.2)] cursor-pointer">
+                    <i class="fa-brands fa-github mr-1.5"></i>Mon Site &amp; Export GitHub
+                </button>
+            </nav>
+
+            <!-- Bouton Configuration API -->
+            <div class="flex items-center gap-2.5">
+                <button onclick="toggleApiModal()" id="btn-open-api" class="px-3.5 py-2 rounded-xl bg-[#041830] hover:bg-[#072344] border border-cyan-400/50 text-xs sm:text-sm font-bold text-cyan-200 flex items-center gap-2 transition-all shadow-[0_0_15px_rgba(0,243,255,0.15)] cursor-pointer">
+                    <i class="fa-solid fa-key text-cyan-400"></i>
+                    <span>⚙️ Configuration API</span>
+                    <span id="api-status-dot" class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f3ff]" title="Prêt"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MODALE CONFIGURATION API (Google AI Studio + ID YouTube + Clé YouTube optionnelle) -->
+    <div id="api-modal" class="fixed inset-0 z-50 hidden bg-[#01060e]/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-card rounded-2xl max-w-lg w-full p-6 neon-border-cyan space-y-5 relative">
+            <div class="flex items-center justify-between border-b border-cyan-500/25 pb-3">
+                <h3 class="text-lg font-black text-white flex items-center gap-2">
+                    <i class="fa-solid fa-sliders text-cyan-400"></i> Configuration des Clés API
+                </h3>
+                <button onclick="toggleApiModal()" class="text-cyan-300/70 hover:text-white text-lg cursor-pointer p-1">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Clé Google AI Studio -->
+                <div>
+                    <div class="flex items-center justify-between mb-1">
+                        <label class="text-xs font-bold text-cyan-200 uppercase tracking-wider">Clé Google AI Studio (GEMINI_API_KEY)</label>
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="text-[11px] text-cyan-400 hover:underline font-semibold">
+                            Obtenir gratuitement ↗
+                        </a>
+                    </div>
+                    <div class="relative flex items-center">
+                        <input type="password" id="cfg-gemini-key" placeholder="AIzaSy... (Colle ta clé gratuite Google AI Studio)" class="w-full bg-[#020b18] border border-cyan-500/40 rounded-xl pl-3.5 pr-10 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                        <button type="button" onclick="toggleInputVisibility('cfg-gemini-key')" class="absolute right-3 text-cyan-400/70 hover:text-cyan-300 cursor-pointer">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mt-1">
+                        🔒 Sauvegardée uniquement sur ton appareil (<code class="text-cyan-300">localStorage</code>). Si vide, le mode Coach IA intégré fonctionne quand même !
+                    </p>
+                </div>
+
+                <!-- ID Chaîne YouTube -->
+                <div>
+                    <label class="block text-xs font-bold text-cyan-200 uppercase tracking-wider mb-1">ID Chaîne YouTube (Rhaelleprogameur)</label>
+                    <input type="text" id="cfg-channel-id" value="UCnYTN59UL5WFhlvzeY4DqFQ" class="w-full bg-[#020b18] border border-cyan-500/40 rounded-xl px-3.5 py-2 text-sm font-mono text-cyan-300 focus:outline-none focus:border-cyan-400">
+                </div>
+
+                <!-- Clé YouTube Data API v3 Optionnelle -->
+                <div>
+                    <div class="flex items-center justify-between mb-1">
+                        <label class="text-xs font-bold text-cyan-200 uppercase tracking-wider">Clé YouTube Data API v3 <span class="text-slate-400 font-normal">(Optionnel)</span></label>
+                        <span class="text-[11px] text-emerald-400 font-semibold">Flux RSS actif sans clé ✓</span>
+                    </div>
+                    <div class="relative flex items-center">
+                        <input type="password" id="cfg-youtube-key" placeholder="Laisse vide pour utiliser le flux RSS gratuit..." class="w-full bg-[#020b18] border border-cyan-500/40 rounded-xl pl-3.5 pr-10 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                        <button type="button" onclick="toggleInputVisibility('cfg-youtube-key')" class="absolute right-3 text-cyan-400/70 hover:text-cyan-300 cursor-pointer">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-3 border-t border-cyan-500/25">
+                <button type="button" onclick="clearSavedKeys()" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-rose-950/60 border border-slate-700 text-xs font-semibold text-slate-300 hover:text-rose-300 transition-all cursor-pointer">
+                    Effacer les clés
+                </button>
+                <button type="button" onclick="saveApiConfig()" class="px-5 py-2.5 rounded-xl neon-btn text-slate-950 font-black text-sm cursor-pointer">
+                    <i class="fa-solid fa-check mr-1.5"></i> Sauvegarder
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform transition-all duration-300 hidden">
+        <div class="glass-card neon-border-cyan px-4 py-3 rounded-xl flex items-center gap-3 text-sm font-bold text-cyan-100 shadow-2xl">
+            <i class="fa-solid fa-circle-check text-cyan-400 text-base"></i>
+            <span id="toast-msg">Fichier index.html téléchargé !</span>
+        </div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 relative z-10">
+
+        <!-- ONGLET 1 : STUDIO & COACH IA -->
+        <div id="view-studio" class="grid grid-cols-1 lg:grid-cols-12 gap-6 hidden">
+
+            <!-- COLONNE GAUCHE : MES VIDÉOS + ANALYSEUR VIDIQ (5 colonnes) -->
+            <div class="lg:col-span-5 space-y-6">
+
+                <!-- 1. BLOC MES DERNIÈRES VIDÉOS (Flux RSS automatique) -->
+                <div class="glass-card rounded-2xl p-5">
+                    <div class="flex items-center justify-between mb-2">
+                        <h2 class="text-sm font-black text-white flex items-center gap-2 uppercase tracking-wide">
+                            <i class="fa-brands fa-youtube text-cyan-400"></i> Mes Dernières Vidéos
+                        </h2>
+                        <button onclick="fetchChannelVideos(true)" id="btn-refresh-videos" class="text-xs bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-300 border border-cyan-400/40 px-2.5 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer">
+                            <i class="fa-solid fa-arrows-rotate"></i> Actualiser
+                        </button>
+                    </div>
+                    <p id="videos-source-label" class="text-[11px] text-cyan-200/70 mb-3">Synchronisé via <span class="text-cyan-300 font-bold">Flux RSS Gratuit</span></p>
+                    <div id="videos-list" class="space-y-2.5 max-h-56 overflow-y-auto pr-1">
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i3.ytimg.com/vi/ZY9oNf9zTtA/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/ZY9oNf9zTtA" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="⚠️ Jumpscare à ne pas regarder le soir 😱">⚠️ Jumpscare à ne pas regarder le soir 😱</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">12/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('⚠️ Jumpscare à ne pas regarder le soir 😱')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i1.ytimg.com/vi/DZp6j2E0quI/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/DZp6j2E0quI" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="Ils sont la voix de Siri, EA Sports et TikTok 😲">Ils sont la voix de Siri, EA Sports et TikTok 😲</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">12/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('Ils sont la voix de Siri, EA Sports et TikTok 😲')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i2.ytimg.com/vi/a-8AFPfdalI/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/a-8AFPfdalI" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="Le cookie qui chante sur le son viral thaïlandais 🍪">Le cookie qui chante sur le son viral thaïlandais 🍪</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">11/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('Le cookie qui chante sur le son viral thaïlandais 🍪')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i4.ytimg.com/vi/c9XZJEn3nSs/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/c9XZJEn3nSs" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="Le biscuit Fanta qui chante sur ce beat 🔊">Le biscuit Fanta qui chante sur ce beat 🔊</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">11/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('Le biscuit Fanta qui chante sur ce beat 🔊')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i3.ytimg.com/vi/zgc0hQZFRBg/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/zgc0hQZFRBg" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="On t'écoute le goat 🐐🔥">On t'écoute le goat 🐐🔥</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">09/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('On t\'écoute le goat 🐐🔥')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="https://i3.ytimg.com/vi/vcOPLqrwT1Q/hqdefault.jpg" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="https://www.youtube.com/shorts/vcOPLqrwT1Q" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="Nyame">Nyame</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">07/11/2026</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('Nyame')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div></div>
+                </div>
+
+                <!-- 2. ANALYSEUR VIDIQ & MÉTRIQUES SHORTS -->
+                <div class="glass-card rounded-2xl p-5 neon-border-cyan space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-base font-black text-white flex items-center gap-2">
+                            <i class="fa-solid fa-gauge-high text-cyan-400"></i> Analyseur VidIQ Shorts
+                        </h2>
+                        <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+                            Objectif Rétention &gt;100%
+                        </span>
+                    </div>
+
+                    <!-- Préréglages rapides multi-gaming -->
+                    <div>
+                        <span class="block text-[11px] font-bold text-cyan-200/70 uppercase tracking-wider mb-1.5">Scénarios rapides :</span>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button type="button" onclick="applyPreset('fortnite')" class="py-1.5 px-2 rounded-xl bg-[#041830] hover:bg-cyan-500/20 border border-cyan-500/30 text-xs font-bold text-cyan-200 transition-all cursor-pointer">
+                                🎮 Fortnite
+                            </button>
+                            <button type="button" onclick="applyPreset('roblox')" class="py-1.5 px-2 rounded-xl bg-[#041830] hover:bg-cyan-500/20 border border-cyan-500/30 text-xs font-bold text-cyan-200 transition-all cursor-pointer">
+                                🧱 Roblox
+                            </button>
+                            <button type="button" onclick="applyPreset('brawlstars')" class="py-1.5 px-2 rounded-xl bg-[#041830] hover:bg-cyan-500/20 border border-cyan-500/30 text-xs font-bold text-cyan-200 transition-all cursor-pointer">
+                                ⭐ Brawl Stars
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire Métriques -->
+                    <form id="analyzer-form" class="space-y-3.5" onsubmit="event.preventDefault(); analyzeWithAI();">
+                        <div>
+                            <label class="block text-xs font-bold text-cyan-100 mb-1">Titre ou idée du Short</label>
+                            <input type="text" id="input-title" value="Ce clutch Fortnite en 1v4 était impossible 😱" oninput="updateScore()" class="w-full bg-[#020b18] border border-cyan-500/35 rounded-xl px-3.5 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-cyan-100 mb-1">Jeu / Catégorie</label>
+                                <select id="input-game" onchange="updateScore()" class="w-full bg-[#020b18] border border-cyan-500/35 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+                                    <option value="Fortnite">Fortnite</option>
+                                    <option value="Roblox">Roblox</option>
+                                    <option value="Brawl Stars">Brawl Stars</option>
+                                    <option value="Multi-Gaming">Multi-Gaming</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-cyan-100 mb-1">Vues actuelles</label>
+                                <input type="number" id="input-views" value="420" min="0" oninput="updateScore()" class="w-full bg-[#020b18] border border-cyan-500/35 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-cyan-100">Rétention (%)</span>
+                                    <span id="val-retention" class="text-cyan-400 font-mono">94%</span>
+                                </div>
+                                <input type="range" id="input-retention" min="20" max="160" value="94" oninput="updateScore()" class="w-full accent-cyan-400 cursor-pointer">
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-cyan-100">Taux de Swipe (%)</span>
+                                    <span id="val-swipe" class="text-amber-400 font-mono">48%</span>
+                                </div>
+                                <input type="range" id="input-swipe" min="10" max="90" value="48" oninput="updateScore()" class="w-full accent-cyan-400 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Jauge Score VidIQ en temps réel -->
+                        <div class="bg-[#020b18]/90 border border-cyan-500/30 rounded-xl p-3.5 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-cyan-200 uppercase">Score Algorithmique VidIQ</span>
+                                <span id="vidiq-score-badge" class="text-lg font-black font-mono neon-text-cyan">82 / 100</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden border border-cyan-500/20">
+                                <div id="vidiq-score-bar" class="h-full bg-gradient-to-r from-cyan-400 to-emerald-400 transition-all duration-300" style="width: 82%;"></div>
+                            </div>
+                            <p id="vidiq-diagnostic" class="text-[11px] text-cyan-100/80">🚀 Potentiel Viral Élevé ! L'algorithme Shorts va pousser ce format.</p>
+                        </div>
+
+                        <button type="submit" id="btn-analyze" class="w-full py-3.5 px-4 rounded-xl neon-btn text-slate-950 font-black text-sm flex items-center justify-center gap-2 cursor-pointer">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> 🚀 Analyser &amp; Générer Hooks + Titres IA
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- COLONNE DROITE : COACH IA GEMINI INTÉGRÉ (7 colonnes) -->
+            <div class="lg:col-span-7 flex flex-col glass-card rounded-2xl neon-border-cyan overflow-hidden min-h-[600px]">
+                
+                <!-- Barre supérieure du Chat Coach IA -->
+                <div class="px-5 py-3.5 bg-[#031326]/90 border-b border-cyan-500/25 flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 shadow-[0_0_12px_rgba(0,243,255,0.25)]">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-black text-white">Coach IA Rhaelleprogameur</h2>
+                            <p id="ai-mode-indicator" class="text-[11px] text-cyan-300 font-medium">Mode Coach Intégré actif • <button onclick="toggleApiModal()" class="underline text-cyan-300 hover:text-white cursor-pointer">Ajouter ta clé Gemini</button></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="quickPrompt('Donne-moi 3 idées de Shorts Fortnite ultra-viraux avec un hook choc dès la 1ère seconde.')" class="text-[11px] px-2.5 py-1 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-200 border border-cyan-400/30 font-semibold cursor-pointer">
+                            + Idées Fortnite
+                        </button>
+                        <button onclick="quickPrompt('Comment faire baisser mon taux de swipe de 75% à moins de 35% sur mes Shorts Roblox et Brawl Stars ?')" class="text-[11px] px-2.5 py-1 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-200 border border-cyan-400/30 font-semibold cursor-pointer">
+                            + Réduire le Swipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Zone des messages -->
+                <div id="chat-messages" class="flex-1 p-5 space-y-4 overflow-y-auto max-h-[520px]">
+                    <!-- Message de bienvenue initial -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 shrink-0 mt-0.5 font-black text-xs">
+                            R
+                        </div>
+                        <div class="bg-[#041830]/90 border border-cyan-500/30 rounded-2xl rounded-tl-none p-4 text-sm text-cyan-50 space-y-2.5 max-w-[90%]">
+                            <p class="font-bold text-cyan-300">Salut Rhaelleprogameur ! Ton Studio Édition Néon Cyan est prêt 🔥</p>
+                            <p class="text-xs leading-relaxed text-slate-200">
+                                Je suis calibré sur ta chaîne (<span class="text-cyan-300 font-semibold">~219 abonnés • 8.2k vues • Fortnite, Roblox, Brawl Stars</span>). 
+                                Sélectionne une de tes vidéos à gauche ou clique sur <span class="text-cyan-300 font-bold">« 🚀 Analyser &amp; Générer Hooks + Titres IA »</span> pour recevoir immédiatement tes accroches des 2 premières secondes et tes titres optimisés !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zone de saisie Chat -->
+                <form onsubmit="event.preventDefault(); sendUserChat();" class="p-4 bg-[#020d1c]/95 border-t border-cyan-500/25 flex items-center gap-2.5">
+                    <input type="text" id="chat-input" placeholder="Demande un hook de 2s, un titre viral ou une analyse pour ton prochain Short..." class="flex-1 bg-[#041830] border border-cyan-500/40 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" id="btn-send-chat" class="px-5 py-3 rounded-xl neon-btn text-slate-950 font-black text-sm flex items-center gap-1.5 shrink-0 cursor-pointer">
+                        <span>Envoyer</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- ONGLET 2 : MON SITE & EXPORT GITHUB -->
+        <div id="view-export" class="space-y-6">
+            
+            <!-- Bannière d'exportation en 1 clic -->
+            <div class="glass-card rounded-2xl p-6 neon-border-cyan flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-1.5">
+                    <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 text-xs font-bold uppercase">
+                        Prêt pour ton nom de domaine • 100% Gratuit
+                    </span>
+                    <h2 class="text-2xl font-black text-white">
+                        Héberge <span class="neon-text-cyan">Rhaelleprogameur Studio AI</span> en ligne
+                    </h2>
+                    <p class="text-sm text-slate-300 max-w-2xl">
+                        Tout le design néon cyan, ton logo « R », la connexion RSS à ta chaîne et l'intégration de ta clé Google AI Studio sont réunis dans un seul fichier <code class="text-cyan-300 font-bold">index.html</code>.
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 shrink-0">
+                    <button onclick="downloadHtmlFile()" class="px-5 py-3 rounded-xl neon-btn text-slate-950 font-black text-sm flex items-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-download"></i> Télécharger index.html
+                    </button>
+                    <button onclick="copyFullSiteCode()" class="px-5 py-3 rounded-xl bg-[#041830] hover:bg-[#072344] border border-cyan-400/50 text-cyan-200 font-bold text-sm flex items-center gap-2 cursor-pointer">
+                        <i class="fa-regular fa-copy"></i> Copier tout le code
+                    </button>
+                </div>
+            </div>
+
+            <!-- Guide rapide en 3 étapes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="glass-card rounded-2xl p-5 space-y-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 font-black flex items-center justify-center">1</div>
+                    <h3 class="text-base font-black text-white">Dépose sur GitHub</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Crée un nouveau dépôt gratuit sur <strong>github.com</strong> (ex: <code class="text-cyan-300">rhaelleprogameur-studio</code>) et glisse simplement le fichier <code class="text-cyan-300">index.html</code> téléchargé ci-dessus.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl p-5 space-y-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 font-black flex items-center justify-center">2</div>
+                    <h3 class="text-base font-black text-white">Active ton site gratuit</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Connecte ton compte GitHub sur <strong>Vercel.com</strong> ou <strong>Netlify.com</strong> (ou active <em>GitHub Pages</em> dans les paramètres du dépôt) pour obtenir ton lien en ligne instantanément.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl p-5 space-y-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 font-black flex items-center justify-center">3</div>
+                    <h3 class="text-base font-black text-white">Colle ta clé Google AI Studio</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Sur ton site en ligne, clique sur <strong>⚙️ Configuration API</strong> en haut à droite et colle ta clé gratuite <strong>Google AI Studio</strong> : elle reste enregistrée dans ton navigateur !
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        // =========================================================================
+        // CONFIGURATION & GESTION DES CLÉS API (Google AI Studio + Chaîne YouTube)
+        // =========================================================================
+        const DEFAULT_CHANNEL_ID = "UCnYTN59UL5WFhlvzeY4DqFQ";
+        const GEMINI_MODEL = "gemini-2.5-flash";
+
+        function getActiveGeminiKey() {
+            const saved = localStorage.getItem("rhaelle_gemini_key");
+            return (saved && saved.trim() !== "") ? saved.trim() : "";
+        }
+
+        function getActiveChannelId() {
+            const saved = localStorage.getItem("rhaelle_channel_id");
+            return (saved && saved.trim() !== "") ? saved.trim() : DEFAULT_CHANNEL_ID;
+        }
+
+        function switchTab(tab) {
+            const studioView = document.getElementById('view-studio');
+            const exportView = document.getElementById('view-export');
+            const btnStudio = document.getElementById('tab-btn-studio');
+            const btnExport = document.getElementById('tab-btn-export');
+
+            if (tab === 'studio') {
+                studioView.classList.remove('hidden');
+                exportView.classList.add('hidden');
+                btnStudio.className = "px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400/50 shadow-[0_0_12px_rgba(0,243,255,0.2)] cursor-pointer";
+                btnExport.className = "px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-cyan-200 cursor-pointer";
+            } else {
+                studioView.classList.add('hidden');
+                exportView.classList.remove('hidden');
+                btnExport.className = "px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400/50 shadow-[0_0_12px_rgba(0,243,255,0.2)] cursor-pointer";
+                btnStudio.className = "px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-cyan-200 cursor-pointer";
+            }
+        }
+
+        function toggleApiModal() {
+            const modal = document.getElementById('api-modal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.getElementById('cfg-gemini-key').value = localStorage.getItem("rhaelle_gemini_key") || "";
+                document.getElementById('cfg-youtube-key').value = localStorage.getItem("rhaelle_youtube_key") || "";
+                document.getElementById('cfg-channel-id').value = getActiveChannelId();
+            }
+        }
+
+        function toggleInputVisibility(id) {
+            const el = document.getElementById(id);
+            el.type = el.type === "password" ? "text" : "password";
+        }
+
+        function saveApiConfig() {
+            const gKey = document.getElementById('cfg-gemini-key').value.trim();
+            const ytKey = document.getElementById('cfg-youtube-key').value.trim();
+            const chId = document.getElementById('cfg-channel-id').value.trim() || DEFAULT_CHANNEL_ID;
+
+            if (gKey) localStorage.setItem("rhaelle_gemini_key", gKey);
+            else localStorage.removeItem("rhaelle_gemini_key");
+
+            if (ytKey) localStorage.setItem("rhaelle_youtube_key", ytKey);
+            else localStorage.removeItem("rhaelle_youtube_key");
+
+            localStorage.setItem("rhaelle_channel_id", chId);
+
+            updateApiStatusUI();
+            toggleApiModal();
+            showToast("Configuration API enregistrée !");
+            fetchChannelVideos(true);
+        }
+
+        function clearSavedKeys() {
+            localStorage.removeItem("rhaelle_gemini_key");
+            localStorage.removeItem("rhaelle_youtube_key");
+            document.getElementById('cfg-gemini-key').value = "";
+            document.getElementById('cfg-youtube-key').value = "";
+            updateApiStatusUI();
+            showToast("Clés effacées du navigateur.");
+        }
+
+        function updateApiStatusUI() {
+            const dot = document.getElementById('api-status-dot');
+            const indicator = document.getElementById('ai-mode-indicator');
+            const hasKey = !!getActiveGeminiKey();
+
+            if (hasKey) {
+                dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]";
+                indicator.innerHTML = `<span class="text-emerald-400 font-bold">● API Google AI Studio connectée</span> • Gemini 2.5 Flash`;
+            } else {
+                dot.className = "w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f3ff]";
+                indicator.innerHTML = `Mode Coach Intégré actif • <button onclick="toggleApiModal()" class="underline text-cyan-300 hover:text-white cursor-pointer">Ajouter ta clé Gemini</button>`;
+            }
+        }
+
+        // =========================================================================
+        // RÉCUPÉRATION AUTOMATIQUE DES VIDÉOS (API YouTube optionnelle ou Flux RSS)
+        // =========================================================================
+        async function fetchChannelVideos(notify = false) {
+            const listEl = document.getElementById('videos-list');
+            const labelEl = document.getElementById('videos-source-label');
+            const channelId = getActiveChannelId();
+            const ytKey = localStorage.getItem("rhaelle_youtube_key");
+
+            listEl.innerHTML = `<div class="text-xs text-cyan-300/80 py-4 text-center"><i class="fa-solid fa-circle-notch fa-spin mr-1.5"></i> Chargement des vidéos de @rhaelleprogameur...</div>`;
+
+            // 1. Si une clé YouTube Data v3 est fournie
+            if (ytKey && ytKey.trim() !== "") {
+                try {
+                    const url = `https://www.googleapis.com/youtube/v3/search?key=${encodeURIComponent(ytKey.trim())}&channelId=${encodeURIComponent(channelId)}&part=snippet,id&order=date&maxResults=6&type=video`;
+                    const res = await fetch(url);
+                    const data = await res.json();
+                    if (data.items && data.items.length > 0) {
+                        const vids = data.items.map(item => ({
+                            title: item.snippet.title,
+                            date: new Date(item.snippet.publishedAt).toLocaleDateString('fr-FR'),
+                            thumb: item.snippet.thumbnails?.medium?.url || item.snippet.thumbnails?.default?.url,
+                            link: `https://www.youtube.com/watch?v=${item.id.videoId}`
+                        }));
+                        labelEl.innerHTML = `Connecté via <span class="text-emerald-400 font-bold">YouTube Data API v3</span>`;
+                        renderVideos(vids);
+                        if (notify) showToast("Vidéos actualisées via YouTube API !");
+                        return;
+                    }
+                } catch (e) {
+                    // Continue vers le flux RSS
+                }
+            }
+
+            // 2. Flux RSS public gratuit de YouTube via proxy CORS
+            const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(channelId)}`;
+            try {
+                const proxyRes = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`);
+                if (proxyRes.ok) {
+                    const proxyJson = await proxyRes.json();
+                    const parser = new DOMParser();
+                    const xml = parser.parseFromString(proxyJson.contents, "text/xml");
+                    const entries = Array.from(xml.querySelectorAll("entry")).slice(0, 6);
+
+                    if (entries.length > 0) {
+                        const vids = entries.map(entry => {
+                            const title = entry.querySelector("title")?.textContent || "Vidéo Rhaelleprogameur";
+                            const pub = entry.querySelector("published")?.textContent;
+                            const videoId = entry.querySelector("yt\\:videoId, videoId")?.textContent || "";
+                            const link = entry.querySelector("link")?.getAttribute("href") || `https://www.youtube.com/watch?v=${videoId}`;
+                            const thumb = videoId ? `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg` : `https://placehold.co/120x68/031326/00f3ff?text=Short`;
+                            return {
+                                title,
+                                date: pub ? new Date(pub).toLocaleDateString('fr-FR') : "Récent",
+                                thumb,
+                                link
+                            };
+                        });
+                        labelEl.innerHTML = `Synchronisé via <span class="text-cyan-300 font-bold">Flux RSS Gratuit</span> (sans clé)`;
+                        renderVideos(vids);
+                        if (notify) showToast("Dernières vidéos récupérées !");
+                        return;
+                    }
+                }
+                throw new Error("AllOrigins vide");
+            } catch (err) {
+                // Secours rss2json
+                try {
+                    const r2j = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`);
+                    const r2jData = await r2j.json();
+                    if (r2jData.status === "ok" && r2jData.items?.length > 0) {
+                        const vids = r2jData.items.slice(0, 6).map(item => ({
+                            title: item.title,
+                            date: new Date(item.pubDate).toLocaleDateString('fr-FR'),
+                            thumb: item.thumbnail || `https://placehold.co/120x68/031326/00f3ff?text=Short`,
+                            link: item.link
+                        }));
+                        labelEl.innerHTML = `Synchronisé via <span class="text-cyan-300 font-bold">Flux RSS Gratuit</span>`;
+                        renderVideos(vids);
+                        if (notify) showToast("Dernières vidéos récupérées !");
+                        return;
+                    }
+                } catch (e2) {}
+
+                // Secours hors-ligne avec les thèmes de la chaîne
+                labelEl.innerHTML = `Aperçu <span class="text-cyan-300 font-bold">@rhaelleprogameur</span> (clique sur Analyser)`;
+                renderVideos([
+                    { title: "Ce move sur Fortnite a surpris tout le lobby ! 🔥", date: "Short", thumb: "https://placehold.co/120x68/031326/00f3ff?text=Fortnite", link: "https://youtube.com/@rhaelleprogameur" },
+                    { title: "Personne n'avait vu ce secret sur Roblox 😱", date: "Short", thumb: "https://placehold.co/120x68/031326/38bdf8?text=Roblox", link: "https://youtube.com/@rhaelleprogameur" },
+                    { title: "Clutch 1v3 Brawl Stars à 1 PV ! ⭐", date: "Short", thumb: "https://placehold.co/120x68/031326/7dd3fc?text=Brawl+Stars", link: "https://youtube.com/@rhaelleprogameur" }
+                ]);
+            }
+        }
+
+        function renderVideos(videos) {
+            const listEl = document.getElementById('videos-list');
+            listEl.innerHTML = videos.map(v => {
+                const escapedTitle = v.title.replace(/"/g, '&quot;').replace(/'/g, "\\'");
+                return `
+                <div class="flex items-center justify-between gap-2.5 bg-[#020b18]/85 hover:bg-[#041830] border border-cyan-500/20 hover:border-cyan-400/50 p-2 rounded-xl transition-all">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <img src="${v.thumb}" alt="Miniature" onerror="this.src='https://placehold.co/120x68/031326/00f3ff?text=Short'" class="w-14 h-9 object-cover rounded-lg shrink-0 border border-cyan-500/30">
+                        <div class="min-w-0">
+                            <a href="${v.link}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-cyan-300 truncate block" title="${v.title.replace(/"/g, '&quot;')}">${v.title}</a>
+                            <span class="text-[10px] text-cyan-200/60 font-mono">${v.date}</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="loadVideoIntoAnalyzer('${escapedTitle}')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-400 text-cyan-300 hover:text-slate-950 border border-cyan-400/40 text-[11px] font-black transition-all cursor-pointer">
+                        Analyser
+                    </button>
+                </div>`;
+            }).join('');
+        }
+
+        function loadVideoIntoAnalyzer(title) {
+            document.getElementById('input-title').value = title;
+            const lower = title.toLowerCase();
+            if (lower.includes('roblox') || lower.includes('blox')) {
+                document.getElementById('input-game').value = 'Roblox';
+            } else if (lower.includes('brawl')) {
+                document.getElementById('input-game').value = 'Brawl Stars';
+            } else if (lower.includes('fortnite')) {
+                document.getElementById('input-game').value = 'Fortnite';
+            }
+            updateScore();
+            showToast("Vidéo chargée dans l'analyseur !");
+        }
+
+        // =========================================================================
+        // ANALYSEUR VIDIQ & CALCUL DU SCORE EN TEMPS RÉEL
+        // =========================================================================
+        const presets = {
+            fortnite: { title: "Ce clutch Fortnite en 1v4 était impossible 😱", game: "Fortnite", views: 450, retention: 96, swipe: 45 },
+            roblox: { title: "J'ai trouvé le glitch le plus fou de Roblox 🤯", game: "Roblox", views: 1200, retention: 108, swipe: 34 },
+            brawlstars: { title: "Survivant Brawl Stars à 12 PV : la fin est folle 🔥", game: "Brawl Stars", views: 890, retention: 102, swipe: 39 }
+        };
+
+        function applyPreset(key) {
+            const p = presets[key];
+            if (!p) return;
+            document.getElementById('input-title').value = p.title;
+            document.getElementById('input-game').value = p.game;
+            document.getElementById('input-views').value = p.views;
+            document.getElementById('input-retention').value = p.retention;
+            document.getElementById('input-swipe').value = p.swipe;
+            updateScore();
+            showToast(`Scénario ${p.game} chargé !`);
+        }
+
+        function updateScore() {
+            const title = document.getElementById('input-title').value.trim();
+            const retention = parseInt(document.getElementById('input-retention').value, 10) || 0;
+            const swipe = parseInt(document.getElementById('input-swipe').value, 10) || 0;
+
+            document.getElementById('val-retention').textContent = retention + "%";
+            document.getElementById('val-swipe').textContent = swipe + "%";
+
+            // Calcul pondéré style VidIQ Shorts
+            let score = 0;
+            score += Math.min(45, Math.round((retention / 115) * 45)); // Max 45 pts pour la rétention
+            score += Math.min(40, Math.round(((100 - swipe) / 70) * 40)); // Max 40 pts si faible swipe
+            if (title.length >= 15 && title.length <= 55) score += 10;
+            if (/[😱🔥🤯⭐💀🚨?]/.test(title)) score += 5;
+            score = Math.max(10, Math.min(100, score));
+
+            const badge = document.getElementById('vidiq-score-badge');
+            const bar = document.getElementById('vidiq-score-bar');
+            const diag = document.getElementById('vidiq-diagnostic');
+
+            badge.textContent = `${score} / 100`;
+            bar.style.width = `${score}%`;
+
+            if (score >= 80) {
+                bar.className = "h-full bg-gradient-to-r from-cyan-400 to-emerald-400 transition-all duration-300";
+                diag.textContent = "🚀 Potentiel Viral Élevé ! L'algorithme Shorts va pousser ce format.";
+            } else if (score >= 55) {
+                bar.className = "h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300";
+                diag.textContent = "⚡ Bon score, mais réduis encore le taux de swipe dans les 2 premières secondes.";
+            } else {
+                bar.className = "h-full bg-gradient-to-r from-amber-400 to-rose-500 transition-all duration-300";
+                diag.textContent = "⚠️ Attention : hook trop lent. Coupe l'intro et démarre directement sur l'action !";
+            }
+        }
+
+        // =========================================================================
+        // COACH IA GEMINI (Utilise la clé Google AI Studio ou le moteur intégré)
+        // =========================================================================
+        async function analyzeWithAI() {
+            const title = document.getElementById('input-title').value.trim();
+            const game = document.getElementById('input-game').value;
+            const views = document.getElementById('input-views').value;
+            const retention = document.getElementById('input-retention').value;
+            const swipe = document.getElementById('input-swipe').value;
+            const score = document.getElementById('vidiq-score-badge').textContent;
+
+            const userSummary = `Analyse mon Short ${game} : "${title}" (${views} vues, rétention ${retention}%, swipe ${swipe}%, score VidIQ ${score}). Donne-moi 3 hooks choc pour les 2 premières secondes et 3 titres viraux optimisés.`;
+            appendMessage('user', userSummary);
+
+            await generateCoachResponse(userSummary, { title, game, views, retention, swipe });
+        }
+
+        function quickPrompt(text) {
+            document.getElementById('chat-input').value = text;
+            sendUserChat();
+        }
+
+        async function sendUserChat() {
+            const input = document.getElementById('chat-input');
+            const text = input.value.trim();
+            if (!text) return;
+            input.value = "";
+            appendMessage('user', text);
+
+            const game = document.getElementById('input-game').value;
+            const title = document.getElementById('input-title').value;
+            await generateCoachResponse(text, { title, game });
+        }
+
+        async function generateCoachResponse(promptText, context = {}) {
+            const loadingId = appendLoadingMessage();
+            const apiKey = getActiveGeminiKey();
+
+            const systemInstruction = `Tu es le Coach IA personnel de la chaîne YouTube "Rhaelleprogameur" (~219 abonnés, 8.2k vues, contenu multi-gaming Shorts : Fortnite, Roblox, Brawl Stars). 
+Ton rôle est d'agir comme une fusion entre VidIQ et un expert viralité YouTube Shorts.
+Règles strictes :
+- Sois direct, énergique, concret et tutoie le créateur.
+- Concentre-toi sur l'accroche des 2 premières secondes (pour stopper le swipe) et la boucle finale (pour dépasser 100% de rétention).
+- Propose toujours des hooks et des titres prêts à copier-coller, courts et percutants (max 50 caractères pour les titres).
+- Réponds en français avec une mise en forme claire.`;
+
+            // 1. Si l'utilisateur a renseigné sa clé Google AI Studio -> Appel réel à Gemini 2.5 Flash
+            if (apiKey) {
+                try {
+                    const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${encodeURIComponent(apiKey)}`;
+                    const response = await fetch(url, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            systemInstruction: { parts: [{ text: systemInstruction }] },
+                            contents: [{ parts: [{ text: promptText }] }]
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`Erreur API (${response.status})`);
+                    }
+
+                    const data = await response.json();
+                    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    removeMessage(loadingId);
+                    if (reply) {
+                        appendFormattedCoachReply(reply, true);
+                        return;
+                    }
+                } catch (err) {
+                    removeMessage(loadingId);
+                    showToast("Clé API invalide ou quota atteint, passage au moteur intégré.");
+                }
+            } else {
+                // Simulation rapide pour fluidité UX
+                await new Promise(r => setTimeout(r, 450));
+                removeMessage(loadingId);
+            }
+
+            // 2. Moteur Coach IA intégré intelligent (fonctionne sans clé API)
+            const game = context.game || "Fortnite";
+            const baseTitle = context.title || "Mon meilleur clip gaming";
+            const builtResponse = buildSmartFallbackResponse(game, baseTitle, context.swipe, context.retention);
+            appendMessage('ai', builtResponse, true);
+        }
+
+        function buildSmartFallbackResponse(game, title, swipe = 50, retention = 90) {
+            const hooksByGame = {
+                "Fortnite": [
+                    "« Ne cligne pas des yeux sur les 2 prochaines secondes… » (Zoom rapide sur l'action dès 0.0s)",
+                    "« 99 % des joueurs auraient abandonné ce 1v4 ! » (Son de build + tir immédiat)",
+                    "« Regarde ma barre de PV en bas à gauche… 😱 » (Flèche cyan animée à 0.5s)"
+                ],
+                "Roblox": [
+                    "« Personne n'est censé voir ce bug sur Roblox… » (Coupe tout temps mort avant l'événement)",
+                    "« J'ai testé le pire piège du serveur et regarde la fin ! » (Musique tendue dès la 1ère frame)",
+                    "« Attends la dernière seconde pour comprendre 🤯 » (Boucle parfaite avec le début)"
+                ],
+                "Brawl Stars": [
+                    "« 1 PV contre toute l'équipe en Survivant… » (Affiche le compteur de PV en gros dès 0.0s)",
+                    "« Ce Super au dernier millième de seconde est illégal 🔥 » (Ralenti + impact sonore)",
+                    "« Pourquoi personne ne joue ce Brawler comme ça ?! » (Action immédiate sans menu)"
+                ]
+            };
+
+            const titlesByGame = {
+                "Fortnite": [
+                    "Ce clutch Fortnite 1v4 est irréel 😱 #shorts",
+                    "Personne ne survit à ça sur Fortnite 🔥",
+                    "Le move le plus fou de ma saison Fortnite 🤯"
+                ],
+                "Roblox": [
+                    "Ce secret Roblox m'a choqué 😱 #shorts",
+                    "J'ai cassé le jeu sur Roblox 🤯",
+                    "La fin sur Roblox est imprévisible 🔥"
+                ],
+                "Brawl Stars": [
+                    "Clutch 1v3 Brawl Stars à 1 PV 😱 #shorts",
+                    "Ce Super Brawl Stars est trop fort 🔥",
+                    "Impossible de gagner ça sur Brawl Stars 🤯"
+                ]
+            };
+
+            const hooks = hooksByGame[game] || hooksByGame["Fortnite"];
+            const titles = titlesByGame[game] || titlesByGame["Fortnite"];
+            const diagnostic = Number(swipe) > 55
+                ? `Ton taux de swipe (${swipe}%) est un peu haut : supprime les 1,5 premières secondes d'attente et mets un texte gros format cyan/blanc dès l'image 1.`
+                : `Ta rétention (${retention}%) est solide ! Ajoute une phrase coupée à la fin qui se relie au début pour forcer le visionnage en boucle (>115%).`;
+
+            return `
+                <div class="space-y-3">
+                    <div class="p-2.5 rounded-xl bg-cyan-500/10 border border-cyan-400/30 text-xs text-cyan-100">
+                        <strong class="text-cyan-300">📊 Diagnostic VidIQ (${game}) :</strong> ${diagnostic}
+                    </div>
+
+                    <div>
+                        <div class="text-xs font-black text-cyan-300 uppercase tracking-wider mb-1.5">⚡ 3 Hooks pour les 2 premières secondes :</div>
+                        <div class="space-y-1.5">
+                            ${hooks.map(h => `
+                                <div class="flex items-center justify-between gap-2 bg-[#020b18] border border-cyan-500/25 px-3 py-2 rounded-xl text-xs">
+                                    <span>${h}</span>
+                                    <button onclick="copyToClipboard('${h.replace(/'/g, "\\'")}', 'Hook copié !')" class="shrink-0 text-cyan-400 hover:text-white px-2 py-1 rounded bg-cyan-500/10 cursor-pointer" title="Copier">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="text-xs font-black text-cyan-300 uppercase tracking-wider mb-1.5">🎯 3 Titres Viraux prêts à copier :</div>
+                        <div class="space-y-1.5">
+                            ${titles.map(t => `
+                                <div class="flex items-center justify-between gap-2 bg-[#020b18] border border-cyan-500/25 px-3 py-2 rounded-xl text-xs font-bold text-white">
+                                    <span>${t}</span>
+                                    <button onclick="copyToClipboard('${t.replace(/'/g, "\\'")}', 'Titre copié !')" class="shrink-0 text-cyan-400 hover:text-white px-2 py-1 rounded bg-cyan-500/10 cursor-pointer" title="Copier">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function appendFormattedCoachReply(markdownText, isLiveGemini = false) {
+            const formatted = markdownText
+                .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                .replace(/\*\*(.*?)\*\*/g, '<strong class="text-cyan-300">$1</strong>')
+                .replace(/\n/g, '<br>');
+            const badge = isLiveGemini ? `<span class="inline-block mb-1.5 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold">✨ Réponse directe Gemini API</span><br>` : "";
+            appendMessage('ai', badge + formatted, true);
+        }
+
+        function appendMessage(role, content, isHtml = false) {
+            const container = document.getElementById('chat-messages');
+            const wrapper = document.createElement('div');
+
+            if (role === 'user') {
+                wrapper.className = "flex items-start justify-end gap-3";
+                wrapper.innerHTML = `
+                    <div class="bg-cyan-500/20 border border-cyan-400/45 rounded-2xl rounded-tr-none px-4 py-3 text-xs sm:text-sm text-white max-w-[85%]">
+                        ${content.replace(/</g, "&lt;")}
+                    </div>
+                `;
+            } else {
+                wrapper.className = "flex items-start gap-3";
+                wrapper.innerHTML = `
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 shrink-0 mt-0.5 font-black text-xs shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+                        R
+                    </div>
+                    <div class="bg-[#041830]/95 border border-cyan-500/30 rounded-2xl rounded-tl-none p-4 text-xs sm:text-sm text-slate-100 max-w-[90%] leading-relaxed">
+                        ${isHtml ? content : content.replace(/</g, "&lt;")}
+                    </div>
+                `;
+            }
+
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function appendLoadingMessage() {
+            const id = "msg-load-" + Date.now();
+            const container = document.getElementById('chat-messages');
+            const wrapper = document.createElement('div');
+            wrapper.id = id;
+            wrapper.className = "flex items-start gap-3";
+            wrapper.innerHTML = `
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 shrink-0 font-black text-xs">R</div>
+                <div class="bg-[#041830]/90 border border-cyan-500/30 rounded-2xl rounded-tl-none px-4 py-3 text-xs text-cyan-300 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i> Analyse des métriques et création des hooks...
+                </div>
+            `;
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+            return id;
+        }
+
+        function removeMessage(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        // =========================================================================
+        // EXPORTATION DU SITE COMPLET & UTILITAIRES PRESSE-PAPIERS
+        // =========================================================================
+        function downloadHtmlFile() {
+            const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            const blob = new Blob([fullHtml], { type: "text/html;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "index.html";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast("Fichier index.html téléchargé !");
+        }
+
+        function copyFullSiteCode() {
+            const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            copyToClipboard(fullHtml, "Code HTML complet copié !");
+        }
+
+        function copyToClipboard(text, message) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            textarea.style.position = "fixed";
+            textarea.style.opacity = "0";
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand("copy");
+                showToast(message);
+            } catch (e) {
+                showToast("Impossible de copier automatiquement.");
+            }
+            document.body.removeChild(textarea);
+        }
+
+        let toastTimer;
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = msg;
+            toast.classList.remove('hidden');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 2800);
+        }
+
+        // Initialisation au chargement
+        window.onload = () => {
+            updateScore();
+            updateApiStatusUI();
+            fetchChannelVideos(false);
+        };
+    </script>
+
+</body></html>
